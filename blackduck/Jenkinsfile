@@ -6,7 +6,7 @@
 //    def POLICY_VIOLATION = false
     stage('Clone Repository')
     {
-        git 'https://github.com/manyatripathi/my-app'
+        sh 'git clone https://github.com/gauravwalecha101/demo.git'
     }
     stage('Synopsys Black Duck Scan')
     {
