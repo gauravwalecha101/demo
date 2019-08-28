@@ -1,9 +1,9 @@
 //Parameters to be configured --> blackduckurl --> mailrecipient --> detect_script_url
 
 
-node('maven') {
-    def rc = 0
-    def POLICY_VIOLATION = false
+//node('maven') {
+//    def rc = 0
+//    def POLICY_VIOLATION = false
     stage('Clone Repository')
     {
         git 'https://github.com/manyatripathi/my-app'
@@ -31,4 +31,4 @@ node('maven') {
     }
 	
     
-}
+//}
