@@ -2,10 +2,10 @@
 
 
 //node('maven') {
-//    def rc = 0
-//    def POLICY_VIOLATION = false
 node
 {
+    def rc = 0
+    def POLICY_VIOLATION = false
     stage('Clone Repository')
     {
         sh 'git clone https://github.com/gauravwalecha101/demo.git'
