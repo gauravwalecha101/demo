@@ -4,6 +4,8 @@
 //node('maven') {
 //    def rc = 0
 //    def POLICY_VIOLATION = false
+node
+{
     stage('Clone Repository')
     {
         sh 'git clone https://github.com/gauravwalecha101/demo.git'
@@ -30,5 +32,5 @@
         emailext to: "${mailrecipient}", subject: "Status of blackduck pipeline: ${currentBuild.fullDisplayName}", body: "You can check the status on blackduck hub ${blackduckurl} and for jenkins logs please visit ${env.BUILD_URL}"
     }
 	
-    
+}   
 //}
